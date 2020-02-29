@@ -9,3 +9,14 @@
 6. The `kubeadm init` command should output a `kubeadm join` command containing a token and hash. Copy that command and run it with `sudo` on both worker nodes.
 7. Verify that all nodes have successfully joined the cluster: using `kubectl get nodes` command .
 8. Configuring Networking with Flannel
+
+1. ToCreate a simple pod running an nginx container:		
+		kubectl apply -f pod.yaml
+2. Get a list of pods and verify that your new nginx pod is in the Running state: 
+		kubectl get pods
+3. Get more information about your nginx pod:
+		kubectl describe pod nginx
+4. Delete the pod 
+		kubectl delete pod nginx
+
+
