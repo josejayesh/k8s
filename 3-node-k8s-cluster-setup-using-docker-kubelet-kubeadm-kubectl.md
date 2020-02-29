@@ -8,3 +8,4 @@
 	**sudo kubectl version** . You should get `Server Version` as well as `Client Version`. 
 6. The `kubeadm init` command should output a `kubeadm join` command containing a token and hash. Copy that command and run it with `sudo` on both worker nodes.
 7. Verify that all nodes have successfully joined the cluster: using `kubectl get nodes` command .
+8. Configuring Networking with Flannel
