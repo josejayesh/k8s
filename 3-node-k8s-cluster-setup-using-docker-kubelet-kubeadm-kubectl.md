@@ -18,5 +18,9 @@
 		kubectl describe pod nginx
 4. Delete the pod 
 		kubectl delete pod nginx
+5. Get a list of nodes
+		kubectl get nodes
+6. Get more information about a specific node
+		kubectl describe node $node_name
 
 
