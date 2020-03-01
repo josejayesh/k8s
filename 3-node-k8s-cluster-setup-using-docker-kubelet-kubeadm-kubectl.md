@@ -24,3 +24,8 @@
 		kubectl describe node $node_name
 
 
+
+
+
+
+
