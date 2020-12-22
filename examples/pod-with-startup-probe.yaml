@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+  name: www-liveness-probe
+spec:
+  containers:
+  - name: www-liveness-probe
+    image: k8s.gcr.io/nginx
+    startupProbe:
+      httpGet:
+        path: /
+        port: 80
+      failureThreshold: 30
+      periodSeconds: 10
